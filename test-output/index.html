@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\May21\OpenCartProject\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">46 methods, 2 failed,   44 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OpenCart.test.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Validate searching with an non existing product&quot;, &quot;To check the search functionality&quot;)">runScenario("Validate searching with an non existing product", "To check the search functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OpenCart.test.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Validate searching without providing any product name&quot;, &quot;To check the search functionality&quot;)">runScenario("Validate searching without providing any product name", "To check the search functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OpenCart.test.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;User should see the password in bullet signs by default&quot;, &quot;To check the login functionality&quot;)">runScenario("User should see the password in bullet signs by default", "To check the login functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OpenCart.test.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Validate searching with an existing product&quot;, &quot;To check the search functionality&quot;)">runScenario("Validate searching with an existing product", "To check the search functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OpenCart.test.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;To verify that when user clicks on add to wishlist and for comparison, the product adds to Wishlist...)">runScenario("To verify that when user clicks on add to wishlist and for comparison, the product adds to Wishlist...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OpenCart.test.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Please fill out this field&quot; message should be displayed if the password or username is empty&quot;, &quot;To ...)">runScenario("Please fill out this field" message should be displayed if the password or username is empty", "To ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OpenCart.test.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Validate registering an account by providing invalid email address into email field&quot;, &quot;To check the...)">runScenario("Validate registering an account by providing invalid email address into email field", "To check the...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OpenCart.test.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Validate registering an account by providing the existing account details&quot;, &quot;To check the register ...)">runScenario("Validate registering an account by providing the existing account details", "To check the register ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OpenCart.test.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Users log in with invalid email or invalid password credentials.&quot;, &quot;To check the login functionalit...)">runScenario("Users log in with invalid email or invalid password credentials.", "To check the login functionalit...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OpenCart.test.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Validate registering an account by providing only the mandatory fields&quot;, &quot;To check the register use...)">runScenario("Validate registering an account by providing only the mandatory fields", "To check the register use...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OpenCart.test.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Validate user is able to sort the products list in the search results&quot;, &quot;To check the search functi...)">runScenario("Validate user is able to sort the products list in the search results", "To check the search functi...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OpenCart.test.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Validate adding the product to cart from comparison page&quot;, &quot;To check the product compare functional...)">runScenario("Validate adding the product to cart from comparison page", "To check the product compare functional...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OpenCart.test.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;validate navigating  to home page from any page of application by clicking on logo&quot;, &quot;To check the ...)">runScenario("validate navigating  to home page from any page of application by clicking on logo", "To check the ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OpenCart.test.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Validate registering an account by providing invalid email address into email field&quot;, &quot;To check the...)">runScenario("Validate registering an account by providing invalid email address into email field", "To check the...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OpenCart.test.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Validate page title, page url and page heading for comparison page&quot;, &quot;To check the product compare ...)">runScenario("Validate page title, page url and page heading for comparison page", "To check the product compare ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OpenCart.test.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Validate registering the account without selecting the privacy policy checkbox option&quot;, &quot;To check t...)">runScenario("Validate registering the account without selecting the privacy policy checkbox option", "To check t...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OpenCart.test.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Please fill out this field&quot; message should be displayed if the password or username is empty&quot;, &quot;To ...)">runScenario("Please fill out this field" message should be displayed if the password or username is empty", "To ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OpenCart.test.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;validate hero image and its slider option in home page&quot;, &quot;To check the home page functionality&quot;)">runScenario("validate hero image and its slider option in home page", "To check the home page functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OpenCart.test.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Users log in with invalid email or invalid password credentials.&quot;, &quot;To check the login functionalit...)">runScenario("Users log in with invalid email or invalid password credentials.", "To check the login functionalit...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OpenCart.test.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Validate that more than 4 products cannot be added to comparison page&quot;, &quot;To check the product compa...)">runScenario("Validate that more than 4 products cannot be added to comparison page", "To check the product compa...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OpenCart.test.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Validate regsitering an account by entering different password into password and confirm password f...)">runScenario("Validate regsitering an account by entering different password into password and confirm password f...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OpenCart.test.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Validate registering an account by providing all the fields&quot;, &quot;To check the register user functiona...)">runScenario("Validate registering an account by providing all the fields", "To check the register user functiona...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OpenCart.test.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Validate comparison page when same product is added twice&quot;, &quot;To check the product compare functiona...)">runScenario("Validate comparison page when same product is added twice", "To check the product compare functiona...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OpenCart.test.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Validate registering an account by providing invalid email address into email field&quot;, &quot;To check the...)">runScenario("Validate registering an account by providing invalid email address into email field", "To check the...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OpenCart.test.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Validate Regsitering an account, by filling password field and not filling password confirm field&quot;,...)">runScenario("Validate Regsitering an account, by filling password field and not filling password confirm field",...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OpenCart.test.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;validate all links present in footer section working properly&quot;, &quot;To check the home page functionali...)">runScenario("validate all links present in footer section working properly", "To check the home page functionali...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OpenCart.test.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Validate registering an account by providing invalid email address into email field&quot;, &quot;To check the...)">runScenario("Validate registering an account by providing invalid email address into email field", "To check the...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OpenCart.test.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Validate registering an account by providing invalid email address into email field&quot;, &quot;To check the...)">runScenario("Validate registering an account by providing invalid email address into email field", "To check the...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OpenCart.test.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;To verify the functionality that search field accepts alphabets and numbers when customer enter pro...)">runScenario("To verify the functionality that search field accepts alphabets and numbers when customer enter pro...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OpenCart.test.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;User tries whether enter button works on the login page.&quot;, &quot;To check the login functionality&quot;)">runScenario("User tries whether enter button works on the login page.", "To check the login functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OpenCart.test.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Validate the Breadcrumb, Page Heading, Page URL, Page Title of Registered Account&quot;, &quot;To check the r...)">runScenario("Validate the Breadcrumb, Page Heading, Page URL, Page Title of Registered Account", "To check the r...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OpenCart.test.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;To verify the functionality of receiving a error message, when enter wrong product name in search f...)">runScenario("To verify the functionality of receiving a error message, when enter wrong product name in search f...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OpenCart.test.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;To verify whether the products in result page sorts according to options available in dropdown&quot;, &quot;T...)">runScenario("To verify whether the products in result page sorts according to options available in dropdown", "T...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OpenCart.test.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;validating navigating to home page using &quot;home icon&quot; option present on different pages on app&quot;, &quot;To...)">runScenario("validating navigating to home page using "home icon" option present on different pages on app", "To...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OpenCart.test.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;validate all links present in header section working properly&quot;, &quot;To check the home page functionali...)">runScenario("validate all links present in header section working properly", "To check the home page functionali...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OpenCart.test.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;validate removing the product from comparison page&quot;, &quot;To check the product compare functionality&quot;)">runScenario("validate removing the product from comparison page", "To check the product compare functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OpenCart.test.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Validate search by selecting the category of product&quot;, &quot;To check the search functionality&quot;)">runScenario("Validate search by selecting the category of product", "To check the search functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OpenCart.test.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;User land on the ‘reset password’ page after clicking on the Forgot password link&quot;, &quot;To check the l...)">runScenario("User land on the ‘reset password’ page after clicking on the Forgot password link", "To check the l...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OpenCart.test.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Users log in with invalid email or invalid password credentials.&quot;, &quot;To check the login functionalit...)">runScenario("Users log in with invalid email or invalid password credentials.", "To check the login functionalit...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OpenCart.test.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Validate search using the text from product description&quot;, &quot;To check the search functionality&quot;)">runScenario("Validate search using the text from product description", "To check the search functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OpenCart.test.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;validate four featured product is displayed on home page&quot;, &quot;To check the home page functionality&quot;)">runScenario("validate four featured product is displayed on home page", "To check the home page functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OpenCart.test.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;validate partner section and its slider option in home page&quot;, &quot;To check the home page functionality...)">runScenario("validate partner section and its slider option in home page", "To check the home page functionality...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OpenCart.test.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Validate success message when product is added for comparison&quot;, &quot;To check the product compare funct...)">runScenario("Validate success message when product is added for comparison", "To check the product compare funct...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OpenCart.test.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;To verify total number of search records displays on page&quot;, &quot;To check the browse functionality&quot;)">runScenario("To verify total number of search records displays on page", "To check the browse functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OpenCart.test.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Validate registering an account by providing invalid email address into email field&quot;, &quot;To check the...)">runScenario("Validate registering an account by providing invalid email address into email field", "To check the...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.OpenCart.test.TestRunner1" class="method navigator-link" hash-for-method="runScenario(&quot;Users log in with valid credentials.&quot;, &quot;To check the login functionality&quot;)">runScenario("Users log in with valid credentials.", "To check the login functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.OpenCart.test.TestRunner1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate searching with an non existing product&quot;, &quot;To check the search functionality&quot;)">
+                  </a> <!-- runScenario("Validate searching with an non existing product", "To check the search functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate searching with an non existing product", "To check the search functionality")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LIN59019640&apos;, ip: &apos;10.235.46.51&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.OpenCart.pages.Search.verfiyErrorMessage(Search.java:130)
+	at com.OpenCart.StepDefinition.SearchDef.a_message_should_be_visible_on_screen_with_shopping_cart_as_empty(SearchDef.java:57)
+	at ✽.a message should be visible on screen with shopping cart as empty(file:///C:/May21/OpenCartProject/src/test/resources/com.OpenCart.Feature/Search.feature:22)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate searching without providing any product name&quot;, &quot;To check the search functionality&quot;)">
+                  </a> <!-- runScenario("Validate searching without providing any product name", "To check the search functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate searching without providing any product name", "To check the search functionality")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LIN59019640&apos;, ip: &apos;10.235.46.51&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.OpenCart.pages.Search.verfiyErrorMessage(Search.java:130)
+	at com.OpenCart.StepDefinition.SearchDef.a_message_should_be_visible_on_screen_with_shopping_cart_as_empty(SearchDef.java:57)
+	at ✽.a message should be visible on screen with shopping cart as empty(file:///C:/May21/OpenCartProject/src/test/resources/com.OpenCart.Feature/Search.feature:27)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.OpenCart.test.TestRunner1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User should see the password in bullet signs by default&quot;, &quot;To check the login functionality&quot;)">
+                  </a> <!-- runScenario("User should see the password in bullet signs by default", "To check the login functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User should see the password in bullet signs by default", "To check the login functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate searching with an existing product&quot;, &quot;To check the search functionality&quot;)">
+                  </a> <!-- runScenario("Validate searching with an existing product", "To check the search functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate searching with an existing product", "To check the search functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;To verify that when user clicks on add to wishlist and for comparison, the product adds to Wishlist...)">
+                  </a> <!-- runScenario("To verify that when user clicks on add to wishlist and for comparison, the product adds to Wishlist...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("To verify that when user clicks on add to wishlist and for comparison, the product adds to Wishlist and adds for comparison page", "To check the browse functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Please fill out this field&quot; message should be displayed if the password or username is empty&quot;, &quot;To ...)">
+                  </a> <!-- runScenario("Please fill out this field" message should be displayed if the password or username is empty", "To ...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Please fill out this field" message should be displayed if the password or username is empty", "To check the login functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate registering an account by providing invalid email address into email field&quot;, &quot;To check the...)">
+                  </a> <!-- runScenario("Validate registering an account by providing invalid email address into email field", "To check the...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate registering an account by providing invalid email address into email field", "To check the register user functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate registering an account by providing the existing account details&quot;, &quot;To check the register ...)">
+                  </a> <!-- runScenario("Validate registering an account by providing the existing account details", "To check the register ...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate registering an account by providing the existing account details", "To check the register user functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Users log in with invalid email or invalid password credentials.&quot;, &quot;To check the login functionalit...)">
+                  </a> <!-- runScenario("Users log in with invalid email or invalid password credentials.", "To check the login functionalit...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Users log in with invalid email or invalid password credentials.", "To check the login functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate registering an account by providing only the mandatory fields&quot;, &quot;To check the register use...)">
+                  </a> <!-- runScenario("Validate registering an account by providing only the mandatory fields", "To check the register use...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate registering an account by providing only the mandatory fields", "To check the register user functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate user is able to sort the products list in the search results&quot;, &quot;To check the search functi...)">
+                  </a> <!-- runScenario("Validate user is able to sort the products list in the search results", "To check the search functi...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate user is able to sort the products list in the search results", "To check the search functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate adding the product to cart from comparison page&quot;, &quot;To check the product compare functional...)">
+                  </a> <!-- runScenario("Validate adding the product to cart from comparison page", "To check the product compare functional...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate adding the product to cart from comparison page", "To check the product compare functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;validate navigating  to home page from any page of application by clicking on logo&quot;, &quot;To check the ...)">
+                  </a> <!-- runScenario("validate navigating  to home page from any page of application by clicking on logo", "To check the ...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("validate navigating  to home page from any page of application by clicking on logo", "To check the home page functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate registering an account by providing invalid email address into email field&quot;, &quot;To check the...)">
+                  </a> <!-- runScenario("Validate registering an account by providing invalid email address into email field", "To check the...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate registering an account by providing invalid email address into email field", "To check the register user functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate page title, page url and page heading for comparison page&quot;, &quot;To check the product compare ...)">
+                  </a> <!-- runScenario("Validate page title, page url and page heading for comparison page", "To check the product compare ...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate page title, page url and page heading for comparison page", "To check the product compare functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate registering the account without selecting the privacy policy checkbox option&quot;, &quot;To check t...)">
+                  </a> <!-- runScenario("Validate registering the account without selecting the privacy policy checkbox option", "To check t...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate registering the account without selecting the privacy policy checkbox option", "To check the register user functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Please fill out this field&quot; message should be displayed if the password or username is empty&quot;, &quot;To ...)">
+                  </a> <!-- runScenario("Please fill out this field" message should be displayed if the password or username is empty", "To ...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Please fill out this field" message should be displayed if the password or username is empty", "To check the login functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;validate hero image and its slider option in home page&quot;, &quot;To check the home page functionality&quot;)">
+                  </a> <!-- runScenario("validate hero image and its slider option in home page", "To check the home page functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("validate hero image and its slider option in home page", "To check the home page functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Users log in with invalid email or invalid password credentials.&quot;, &quot;To check the login functionalit...)">
+                  </a> <!-- runScenario("Users log in with invalid email or invalid password credentials.", "To check the login functionalit...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Users log in with invalid email or invalid password credentials.", "To check the login functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate that more than 4 products cannot be added to comparison page&quot;, &quot;To check the product compa...)">
+                  </a> <!-- runScenario("Validate that more than 4 products cannot be added to comparison page", "To check the product compa...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate that more than 4 products cannot be added to comparison page", "To check the product compare functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate regsitering an account by entering different password into password and confirm password f...)">
+                  </a> <!-- runScenario("Validate regsitering an account by entering different password into password and confirm password f...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate regsitering an account by entering different password into password and confirm password field", "To check the register user functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate registering an account by providing all the fields&quot;, &quot;To check the register user functiona...)">
+                  </a> <!-- runScenario("Validate registering an account by providing all the fields", "To check the register user functiona...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate registering an account by providing all the fields", "To check the register user functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate comparison page when same product is added twice&quot;, &quot;To check the product compare functiona...)">
+                  </a> <!-- runScenario("Validate comparison page when same product is added twice", "To check the product compare functiona...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate comparison page when same product is added twice", "To check the product compare functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate registering an account by providing invalid email address into email field&quot;, &quot;To check the...)">
+                  </a> <!-- runScenario("Validate registering an account by providing invalid email address into email field", "To check the...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate registering an account by providing invalid email address into email field", "To check the register user functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate Regsitering an account, by filling password field and not filling password confirm field&quot;,...)">
+                  </a> <!-- runScenario("Validate Regsitering an account, by filling password field and not filling password confirm field",...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate Regsitering an account, by filling password field and not filling password confirm field", "To check the register user functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;validate all links present in footer section working properly&quot;, &quot;To check the home page functionali...)">
+                  </a> <!-- runScenario("validate all links present in footer section working properly", "To check the home page functionali...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("validate all links present in footer section working properly", "To check the home page functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate registering an account by providing invalid email address into email field&quot;, &quot;To check the...)">
+                  </a> <!-- runScenario("Validate registering an account by providing invalid email address into email field", "To check the...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate registering an account by providing invalid email address into email field", "To check the register user functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate registering an account by providing invalid email address into email field&quot;, &quot;To check the...)">
+                  </a> <!-- runScenario("Validate registering an account by providing invalid email address into email field", "To check the...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate registering an account by providing invalid email address into email field", "To check the register user functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;To verify the functionality that search field accepts alphabets and numbers when customer enter pro...)">
+                  </a> <!-- runScenario("To verify the functionality that search field accepts alphabets and numbers when customer enter pro...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("To verify the functionality that search field accepts alphabets and numbers when customer enter product detail", "To check the browse functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User tries whether enter button works on the login page.&quot;, &quot;To check the login functionality&quot;)">
+                  </a> <!-- runScenario("User tries whether enter button works on the login page.", "To check the login functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User tries whether enter button works on the login page.", "To check the login functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate the Breadcrumb, Page Heading, Page URL, Page Title of Registered Account&quot;, &quot;To check the r...)">
+                  </a> <!-- runScenario("Validate the Breadcrumb, Page Heading, Page URL, Page Title of Registered Account", "To check the r...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate the Breadcrumb, Page Heading, Page URL, Page Title of Registered Account", "To check the register user functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;To verify the functionality of receiving a error message, when enter wrong product name in search f...)">
+                  </a> <!-- runScenario("To verify the functionality of receiving a error message, when enter wrong product name in search f...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("To verify the functionality of receiving a error message, when enter wrong product name in search field", "To check the browse functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;To verify whether the products in result page sorts according to options available in dropdown&quot;, &quot;T...)">
+                  </a> <!-- runScenario("To verify whether the products in result page sorts according to options available in dropdown", "T...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("To verify whether the products in result page sorts according to options available in dropdown", "To check the browse functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;validating navigating to home page using &quot;home icon&quot; option present on different pages on app&quot;, &quot;To...)">
+                  </a> <!-- runScenario("validating navigating to home page using "home icon" option present on different pages on app", "To...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("validating navigating to home page using "home icon" option present on different pages on app", "To check the home page functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;validate all links present in header section working properly&quot;, &quot;To check the home page functionali...)">
+                  </a> <!-- runScenario("validate all links present in header section working properly", "To check the home page functionali...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("validate all links present in header section working properly", "To check the home page functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;validate removing the product from comparison page&quot;, &quot;To check the product compare functionality&quot;)">
+                  </a> <!-- runScenario("validate removing the product from comparison page", "To check the product compare functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("validate removing the product from comparison page", "To check the product compare functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate search by selecting the category of product&quot;, &quot;To check the search functionality&quot;)">
+                  </a> <!-- runScenario("Validate search by selecting the category of product", "To check the search functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate search by selecting the category of product", "To check the search functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User land on the ‘reset password’ page after clicking on the Forgot password link&quot;, &quot;To check the l...)">
+                  </a> <!-- runScenario("User land on the ‘reset password’ page after clicking on the Forgot password link", "To check the l...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User land on the ‘reset password’ page after clicking on the Forgot password link", "To check the login functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Users log in with invalid email or invalid password credentials.&quot;, &quot;To check the login functionalit...)">
+                  </a> <!-- runScenario("Users log in with invalid email or invalid password credentials.", "To check the login functionalit...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Users log in with invalid email or invalid password credentials.", "To check the login functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate search using the text from product description&quot;, &quot;To check the search functionality&quot;)">
+                  </a> <!-- runScenario("Validate search using the text from product description", "To check the search functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate search using the text from product description", "To check the search functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;validate four featured product is displayed on home page&quot;, &quot;To check the home page functionality&quot;)">
+                  </a> <!-- runScenario("validate four featured product is displayed on home page", "To check the home page functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("validate four featured product is displayed on home page", "To check the home page functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;validate partner section and its slider option in home page&quot;, &quot;To check the home page functionality...)">
+                  </a> <!-- runScenario("validate partner section and its slider option in home page", "To check the home page functionality...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("validate partner section and its slider option in home page", "To check the home page functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate success message when product is added for comparison&quot;, &quot;To check the product compare funct...)">
+                  </a> <!-- runScenario("Validate success message when product is added for comparison", "To check the product compare funct...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate success message when product is added for comparison", "To check the product compare functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;To verify total number of search records displays on page&quot;, &quot;To check the browse functionality&quot;)">
+                  </a> <!-- runScenario("To verify total number of search records displays on page", "To check the browse functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("To verify total number of search records displays on page", "To check the browse functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate registering an account by providing invalid email address into email field&quot;, &quot;To check the...)">
+                  </a> <!-- runScenario("Validate registering an account by providing invalid email address into email field", "To check the...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate registering an account by providing invalid email address into email field", "To check the register user functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Users log in with valid credentials.&quot;, &quot;To check the login functionality&quot;)">
+                  </a> <!-- runScenario("Users log in with valid credentials.", "To check the login functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Users log in with valid credentials.", "To check the login functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\May21\OpenCartProject\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.OpenCart.test.TestRunner1&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">runScenario</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(46);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'runScenario')
+data.setCell(0, 2, 'com.OpenCart.test.TestRunner1')
+data.setCell(0, 3, 3166760);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'com.OpenCart.test.TestRunner1')
+data.setCell(1, 3, 238137);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'com.OpenCart.test.TestRunner1')
+data.setCell(2, 3, 223721);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'com.OpenCart.test.TestRunner1')
+data.setCell(3, 3, 202822);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'com.OpenCart.test.TestRunner1')
+data.setCell(4, 3, 158304);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'com.OpenCart.test.TestRunner1')
+data.setCell(5, 3, 146099);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'com.OpenCart.test.TestRunner1')
+data.setCell(6, 3, 141864);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'runScenario')
+data.setCell(7, 2, 'com.OpenCart.test.TestRunner1')
+data.setCell(7, 3, 131705);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'runScenario')
+data.setCell(8, 2, 'com.OpenCart.test.TestRunner1')
+data.setCell(8, 3, 131669);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'runScenario')
+data.setCell(9, 2, 'com.OpenCart.test.TestRunner1')
+data.setCell(9, 3, 118337);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'runScenario')
+data.setCell(10, 2, 'com.OpenCart.test.TestRunner1')
+data.setCell(10, 3, 117767);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'runScenario')
+data.setCell(11, 2, 'com.OpenCart.test.TestRunner1')
+data.setCell(11, 3, 116185);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'runScenario')
+data.setCell(12, 2, 'com.OpenCart.test.TestRunner1')
+data.setCell(12, 3, 111610);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'runScenario')
+data.setCell(13, 2, 'com.OpenCart.test.TestRunner1')
+data.setCell(13, 3, 108967);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'runScenario')
+data.setCell(14, 2, 'com.OpenCart.test.TestRunner1')
+data.setCell(14, 3, 106139);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'runScenario')
+data.setCell(15, 2, 'com.OpenCart.test.TestRunner1')
+data.setCell(15, 3, 103823);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'runScenario')
+data.setCell(16, 2, 'com.OpenCart.test.TestRunner1')
+data.setCell(16, 3, 103669);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'runScenario')
+data.setCell(17, 2, 'com.OpenCart.test.TestRunner1')
+data.setCell(17, 3, 101247);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'runScenario')
+data.setCell(18, 2, 'com.OpenCart.test.TestRunner1')
+data.setCell(18, 3, 100040);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'runScenario')
+data.setCell(19, 2, 'com.OpenCart.test.TestRunner1')
+data.setCell(19, 3, 95060);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'runScenario')
+data.setCell(20, 2, 'com.OpenCart.test.TestRunner1')
+data.setCell(20, 3, 88251);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'runScenario')
+data.setCell(21, 2, 'com.OpenCart.test.TestRunner1')
+data.setCell(21, 3, 87436);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'runScenario')
+data.setCell(22, 2, 'com.OpenCart.test.TestRunner1')
+data.setCell(22, 3, 87373);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'runScenario')
+data.setCell(23, 2, 'com.OpenCart.test.TestRunner1')
+data.setCell(23, 3, 86781);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'runScenario')
+data.setCell(24, 2, 'com.OpenCart.test.TestRunner1')
+data.setCell(24, 3, 83890);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'runScenario')
+data.setCell(25, 2, 'com.OpenCart.test.TestRunner1')
+data.setCell(25, 3, 83028);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'runScenario')
+data.setCell(26, 2, 'com.OpenCart.test.TestRunner1')
+data.setCell(26, 3, 72637);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'runScenario')
+data.setCell(27, 2, 'com.OpenCart.test.TestRunner1')
+data.setCell(27, 3, 71880);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'runScenario')
+data.setCell(28, 2, 'com.OpenCart.test.TestRunner1')
+data.setCell(28, 3, 62010);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'runScenario')
+data.setCell(29, 2, 'com.OpenCart.test.TestRunner1')
+data.setCell(29, 3, 60603);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'runScenario')
+data.setCell(30, 2, 'com.OpenCart.test.TestRunner1')
+data.setCell(30, 3, 56154);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'runScenario')
+data.setCell(31, 2, 'com.OpenCart.test.TestRunner1')
+data.setCell(31, 3, 55747);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'runScenario')
+data.setCell(32, 2, 'com.OpenCart.test.TestRunner1')
+data.setCell(32, 3, 54861);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'runScenario')
+data.setCell(33, 2, 'com.OpenCart.test.TestRunner1')
+data.setCell(33, 3, 53734);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'runScenario')
+data.setCell(34, 2, 'com.OpenCart.test.TestRunner1')
+data.setCell(34, 3, 53699);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'runScenario')
+data.setCell(35, 2, 'com.OpenCart.test.TestRunner1')
+data.setCell(35, 3, 51864);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'runScenario')
+data.setCell(36, 2, 'com.OpenCart.test.TestRunner1')
+data.setCell(36, 3, 50990);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'runScenario')
+data.setCell(37, 2, 'com.OpenCart.test.TestRunner1')
+data.setCell(37, 3, 50001);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'runScenario')
+data.setCell(38, 2, 'com.OpenCart.test.TestRunner1')
+data.setCell(38, 3, 49920);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'runScenario')
+data.setCell(39, 2, 'com.OpenCart.test.TestRunner1')
+data.setCell(39, 3, 49245);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'runScenario')
+data.setCell(40, 2, 'com.OpenCart.test.TestRunner1')
+data.setCell(40, 3, 47721);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'runScenario')
+data.setCell(41, 2, 'com.OpenCart.test.TestRunner1')
+data.setCell(41, 3, 46545);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'runScenario')
+data.setCell(42, 2, 'com.OpenCart.test.TestRunner1')
+data.setCell(42, 3, 42577);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'runScenario')
+data.setCell(43, 2, 'com.OpenCart.test.TestRunner1')
+data.setCell(43, 3, 42481);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'runScenario')
+data.setCell(44, 2, 'com.OpenCart.test.TestRunner1')
+data.setCell(44, 3, 39130);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'runScenario')
+data.setCell(45, 2, 'com.OpenCart.test.TestRunner1')
+data.setCell(45, 3, 38728);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 hours</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.OpenCart.test.TestRunner1</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("To verify the functionality that search field accepts alphabets and numbers when customer enter pro...)</span>
+                <span class="method-start">407 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("To verify the functionality of receiving a error message, when enter wrong product name in search f...)</span>
+                <span class="method-start">62506 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("To verify whether the products in result page sorts according to options available in dropdown", "T...)</span>
+                <span class="method-start">101241 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("To verify that when user clicks on add to wishlist and for comparison, the product adds to Wishlist...)</span>
+                <span class="method-start">143820 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("To verify total number of search records displays on page", "To check the browse functionality")</span>
+                <span class="method-start">190369 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("validate hero image and its slider option in home page", "To check the home page functionality")</span>
+                <span class="method-start">232853 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("validate all links present in header section working properly", "To check the home page functionali...)</span>
+                <span class="method-start">283846 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("validate navigating  to home page from any page of application by clicking on logo", "To check the ...)</span>
+                <span class="method-start">337548 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("validate partner section and its slider option in home page", "To check the home page functionality...)</span>
+                <span class="method-start">398159 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("validating navigating to home page using "home icon" option present on different pages on app", "To...)</span>
+                <span class="method-start">451895 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("validate all links present in footer section working properly", "To check the home page functionali...)</span>
+                <span class="method-start">507645 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("validate four featured product is displayed on home page", "To check the home page functionality")</span>
+                <span class="method-start">562509 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Users log in with invalid email or invalid password credentials.", "To check the login functionalit...)</span>
+                <span class="method-start">618666 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Users log in with invalid email or invalid password credentials.", "To check the login functionalit...)</span>
+                <span class="method-start">667915 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Users log in with invalid email or invalid password credentials.", "To check the login functionalit...)</span>
+                <span class="method-start">715639 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Users log in with valid credentials.", "To check the login functionality")</span>
+                <span class="method-start">765643 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("User should see the password in bullet signs by default", "To check the login functionality")</span>
+                <span class="method-start">817552 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("User tries whether enter button works on the login page.", "To check the login functionality")</span>
+                <span class="method-start">856685 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("User land on the ‘reset password’ page after clicking on the Forgot password link", "To check the l...)</span>
+                <span class="method-start">906608 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Please fill out this field" message should be displayed if the password or username is empty", "To ...)</span>
+                <span class="method-start">978491 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Please fill out this field" message should be displayed if the password or username is empty", "To ...)</span>
+                <span class="method-start">1065930 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate adding the product to cart from comparison page", "To check the product compare functional...)</span>
+                <span class="method-start">1138570 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("validate removing the product from comparison page", "To check the product compare functionality")</span>
+                <span class="method-start">1250183 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate page title, page url and page heading for comparison page", "To check the product compare ...)</span>
+                <span class="method-start">1366371 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate that more than 4 products cannot be added to comparison page", "To check the product compa...)</span>
+                <span class="method-start">1470196 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate success message when product is added for comparison", "To check the product compare funct...)</span>
+                <span class="method-start">1587965 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate comparison page when same product is added twice", "To check the product compare functiona...)</span>
+                <span class="method-start">1706305 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate regsitering an account by entering different password into password and confirm password f...)</span>
+                <span class="method-start">1848171 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate Regsitering an account, by filling password field and not filling password confirm field",...)</span>
+                <span class="method-start">1948214 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate registering an account by providing invalid email address into email field", "To check the...)</span>
+                <span class="method-start">2049464 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate registering an account by providing invalid email address into email field", "To check the...)</span>
+                <span class="method-start">2133365 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate registering an account by providing invalid email address into email field", "To check the...)</span>
+                <span class="method-start">2220156 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate registering an account by providing invalid email address into email field", "To check the...)</span>
+                <span class="method-start">2326305 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate registering an account by providing invalid email address into email field", "To check the...)</span>
+                <span class="method-start">2414566 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate registering an account by providing invalid email address into email field", "To check the...)</span>
+                <span class="method-start">2497603 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate registering the account without selecting the privacy policy checkbox option", "To check t...)</span>
+                <span class="method-start">2584980 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate registering an account by providing all the fields", "To check the register user functiona...)</span>
+                <span class="method-start">2693958 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate registering an account by providing only the mandatory fields", "To check the register use...)</span>
+                <span class="method-start">2825672 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate registering an account by providing the existing account details", "To check the register ...)</span>
+                <span class="method-start">2957345 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate the Breadcrumb, Page Heading, Page URL, Page Title of Registered Account", "To check the r...)</span>
+                <span class="method-start">3061019 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate searching with an existing product", "To check the search functionality")</span>
+                <span class="method-start">3156081 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Validate searching with an non existing product", "To check the search functionality")</span>
+                <span class="method-start">3358907 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Validate searching without providing any product name", "To check the search functionality")</span>
+                <span class="method-start">3505014 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate user is able to sort the products list in the search results", "To check the search functi...)</span>
+                <span class="method-start">3663327 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate search by selecting the category of product", "To check the search functionality")</span>
+                <span class="method-start">3887052 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate search using the text from product description", "To check the search functionality")</span>
+                <span class="method-start">4125199 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">7291964 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

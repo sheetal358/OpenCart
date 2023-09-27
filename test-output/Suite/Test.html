@@ -1,0 +1,375 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>44/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Aug 02 12:22:43 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>7292 seconds (7292002 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.OpenCart.test.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.OpenCart.test.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate searching with an non existing product", "To check the search functionality"</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LIN59019640&apos;, ip: &apos;10.235.46.51&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.OpenCart.pages.Search.verfiyErrorMessage(Search.java:130)
+	at com.OpenCart.StepDefinition.SearchDef.a_message_should_be_visible_on_screen_with_shopping_cart_as_empty(SearchDef.java:57)
+	at ?.a message should be visible on screen with shopping cart as empty(file:///C:/May21/OpenCartProject/src/test/resources/com.OpenCart.Feature/Search.feature:22)
+</pre></div><a href='#' onClick='toggleBox("stack-trace90471488", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace90471488'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LIN59019640&apos;, ip: &apos;10.235.46.51&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.OpenCart.pages.Search.verfiyErrorMessage(Search.java:130)
+	at com.OpenCart.StepDefinition.SearchDef.a_message_should_be_visible_on_screen_with_shopping_cart_as_empty(SearchDef.java:57)
+	at ?.a message should be visible on screen with shopping cart as empty(file:///C:/May21/OpenCartProject/src/test/resources/com.OpenCart.Feature/Search.feature:22)
+</pre></div></td>
+<td>146</td>
+<td>com.OpenCart.test.TestRunner1@5631962</td></tr>
+<tr>
+<td title='com.OpenCart.test.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.OpenCart.test.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate searching without providing any product name", "To check the search functionality"</td>
+<td><div><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LIN59019640&apos;, ip: &apos;10.235.46.51&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.OpenCart.pages.Search.verfiyErrorMessage(Search.java:130)
+	at com.OpenCart.StepDefinition.SearchDef.a_message_should_be_visible_on_screen_with_shopping_cart_as_empty(SearchDef.java:57)
+	at ?.a message should be visible on screen with shopping cart as empty(file:///C:/May21/OpenCartProject/src/test/resources/com.OpenCart.Feature/Search.feature:27)
+</pre></div><a href='#' onClick='toggleBox("stack-trace263948812", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace263948812'><pre>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;LIN59019640&apos;, ip: &apos;10.235.46.51&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.OpenCart.pages.Search.verfiyErrorMessage(Search.java:130)
+	at com.OpenCart.StepDefinition.SearchDef.a_message_should_be_visible_on_screen_with_shopping_cart_as_empty(SearchDef.java:57)
+	at ?.a message should be visible on screen with shopping cart as empty(file:///C:/May21/OpenCartProject/src/test/resources/com.OpenCart.Feature/Search.feature:27)
+</pre></div></td>
+<td>158</td>
+<td>com.OpenCart.test.TestRunner1@5631962</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.OpenCart.test.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.OpenCart.test.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To verify the functionality that search field accepts alphabets and numbers when customer enter product detail", "To check the browse functionality"</td>
+<td></td>
+<td>62</td>
+<td>com.OpenCart.test.TestRunner1@5631962</td></tr>
+<tr>
+<td title='com.OpenCart.test.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.OpenCart.test.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To verify the functionality of receiving a error message, when enter wrong product name in search field", "To check the browse functionality"</td>
+<td></td>
+<td>38</td>
+<td>com.OpenCart.test.TestRunner1@5631962</td></tr>
+<tr>
+<td title='com.OpenCart.test.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.OpenCart.test.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To verify whether the products in result page sorts according to options available in dropdown", "To check the browse functionality"</td>
+<td></td>
+<td>42</td>
+<td>com.OpenCart.test.TestRunner1@5631962</td></tr>
+<tr>
+<td title='com.OpenCart.test.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.OpenCart.test.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To verify that when user clicks on add to wishlist and for comparison, the product adds to Wishlist and adds for comparison page", "To check the browse functionality"</td>
+<td></td>
+<td>46</td>
+<td>com.OpenCart.test.TestRunner1@5631962</td></tr>
+<tr>
+<td title='com.OpenCart.test.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.OpenCart.test.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To verify total number of search records displays on page", "To check the browse functionality"</td>
+<td></td>
+<td>42</td>
+<td>com.OpenCart.test.TestRunner1@5631962</td></tr>
+<tr>
+<td title='com.OpenCart.test.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.OpenCart.test.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate hero image and its slider option in home page", "To check the home page functionality"</td>
+<td></td>
+<td>50</td>
+<td>com.OpenCart.test.TestRunner1@5631962</td></tr>
+<tr>
+<td title='com.OpenCart.test.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.OpenCart.test.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate all links present in header section working properly", "To check the home page functionality"</td>
+<td></td>
+<td>53</td>
+<td>com.OpenCart.test.TestRunner1@5631962</td></tr>
+<tr>
+<td title='com.OpenCart.test.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.OpenCart.test.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate navigating  to home page from any page of application by clicking on logo", "To check the home page functionality"</td>
+<td></td>
+<td>60</td>
+<td>com.OpenCart.test.TestRunner1@5631962</td></tr>
+<tr>
+<td title='com.OpenCart.test.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.OpenCart.test.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate partner section and its slider option in home page", "To check the home page functionality"</td>
+<td></td>
+<td>53</td>
+<td>com.OpenCart.test.TestRunner1@5631962</td></tr>
+<tr>
+<td title='com.OpenCart.test.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.OpenCart.test.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validating navigating to home page using "home icon" option present on different pages on app", "To check the home page functionality"</td>
+<td></td>
+<td>55</td>
+<td>com.OpenCart.test.TestRunner1@5631962</td></tr>
+<tr>
+<td title='com.OpenCart.test.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.OpenCart.test.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate all links present in footer section working properly", "To check the home page functionality"</td>
+<td></td>
+<td>54</td>
+<td>com.OpenCart.test.TestRunner1@5631962</td></tr>
+<tr>
+<td title='com.OpenCart.test.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.OpenCart.test.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate four featured product is displayed on home page", "To check the home page functionality"</td>
+<td></td>
+<td>56</td>
+<td>com.OpenCart.test.TestRunner1@5631962</td></tr>
+<tr>
+<td title='com.OpenCart.test.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.OpenCart.test.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Users log in with invalid email or invalid password credentials.", "To check the login functionality"</td>
+<td></td>
+<td>49</td>
+<td>com.OpenCart.test.TestRunner1@5631962</td></tr>
+<tr>
+<td title='com.OpenCart.test.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.OpenCart.test.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Users log in with invalid email or invalid password credentials.", "To check the login functionality"</td>
+<td></td>
+<td>47</td>
+<td>com.OpenCart.test.TestRunner1@5631962</td></tr>
+<tr>
+<td title='com.OpenCart.test.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.OpenCart.test.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Users log in with invalid email or invalid password credentials.", "To check the login functionality"</td>
+<td></td>
+<td>50</td>
+<td>com.OpenCart.test.TestRunner1@5631962</td></tr>
+<tr>
+<td title='com.OpenCart.test.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.OpenCart.test.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Users log in with valid credentials.", "To check the login functionality"</td>
+<td></td>
+<td>51</td>
+<td>com.OpenCart.test.TestRunner1@5631962</td></tr>
+<tr>
+<td title='com.OpenCart.test.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.OpenCart.test.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User should see the password in bullet signs by default", "To check the login functionality"</td>
+<td></td>
+<td>39</td>
+<td>com.OpenCart.test.TestRunner1@5631962</td></tr>
+<tr>
+<td title='com.OpenCart.test.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.OpenCart.test.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User tries whether enter button works on the login page.", "To check the login functionality"</td>
+<td></td>
+<td>49</td>
+<td>com.OpenCart.test.TestRunner1@5631962</td></tr>
+<tr>
+<td title='com.OpenCart.test.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.OpenCart.test.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User land on the ‘reset password’ page after clicking on the Forgot password link", "To check the login functionality"</td>
+<td></td>
+<td>71</td>
+<td>com.OpenCart.test.TestRunner1@5631962</td></tr>
+<tr>
+<td title='com.OpenCart.test.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.OpenCart.test.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Please fill out this field" message should be displayed if the password or username is empty", "To check the login functionality"</td>
+<td></td>
+<td>87</td>
+<td>com.OpenCart.test.TestRunner1@5631962</td></tr>
+<tr>
+<td title='com.OpenCart.test.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.OpenCart.test.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Please fill out this field" message should be displayed if the password or username is empty", "To check the login functionality"</td>
+<td></td>
+<td>72</td>
+<td>com.OpenCart.test.TestRunner1@5631962</td></tr>
+<tr>
+<td title='com.OpenCart.test.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.OpenCart.test.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate adding the product to cart from comparison page", "To check the product compare functionality"</td>
+<td></td>
+<td>111</td>
+<td>com.OpenCart.test.TestRunner1@5631962</td></tr>
+<tr>
+<td title='com.OpenCart.test.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.OpenCart.test.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "validate removing the product from comparison page", "To check the product compare functionality"</td>
+<td></td>
+<td>116</td>
+<td>com.OpenCart.test.TestRunner1@5631962</td></tr>
+<tr>
+<td title='com.OpenCart.test.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.OpenCart.test.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate page title, page url and page heading for comparison page", "To check the product compare functionality"</td>
+<td></td>
+<td>103</td>
+<td>com.OpenCart.test.TestRunner1@5631962</td></tr>
+<tr>
+<td title='com.OpenCart.test.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.OpenCart.test.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate that more than 4 products cannot be added to comparison page", "To check the product compare functionality"</td>
+<td></td>
+<td>117</td>
+<td>com.OpenCart.test.TestRunner1@5631962</td></tr>
+<tr>
+<td title='com.OpenCart.test.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.OpenCart.test.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate success message when product is added for comparison", "To check the product compare functionality"</td>
+<td></td>
+<td>118</td>
+<td>com.OpenCart.test.TestRunner1@5631962</td></tr>
+<tr>
+<td title='com.OpenCart.test.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.OpenCart.test.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate comparison page when same product is added twice", "To check the product compare functionality"</td>
+<td></td>
+<td>141</td>
+<td>com.OpenCart.test.TestRunner1@5631962</td></tr>
+<tr>
+<td title='com.OpenCart.test.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.OpenCart.test.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate regsitering an account by entering different password into password and confirm password field", "To check the register user functionality"</td>
+<td></td>
+<td>100</td>
+<td>com.OpenCart.test.TestRunner1@5631962</td></tr>
+<tr>
+<td title='com.OpenCart.test.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.OpenCart.test.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Regsitering an account, by filling password field and not filling password confirm field", "To check the register user functionality"</td>
+<td></td>
+<td>101</td>
+<td>com.OpenCart.test.TestRunner1@5631962</td></tr>
+<tr>
+<td title='com.OpenCart.test.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.OpenCart.test.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate registering an account by providing invalid email address into email field", "To check the register user functionality"</td>
+<td></td>
+<td>83</td>
+<td>com.OpenCart.test.TestRunner1@5631962</td></tr>
+<tr>
+<td title='com.OpenCart.test.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.OpenCart.test.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate registering an account by providing invalid email address into email field", "To check the register user functionality"</td>
+<td></td>
+<td>86</td>
+<td>com.OpenCart.test.TestRunner1@5631962</td></tr>
+<tr>
+<td title='com.OpenCart.test.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.OpenCart.test.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate registering an account by providing invalid email address into email field", "To check the register user functionality"</td>
+<td></td>
+<td>106</td>
+<td>com.OpenCart.test.TestRunner1@5631962</td></tr>
+<tr>
+<td title='com.OpenCart.test.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.OpenCart.test.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate registering an account by providing invalid email address into email field", "To check the register user functionality"</td>
+<td></td>
+<td>88</td>
+<td>com.OpenCart.test.TestRunner1@5631962</td></tr>
+<tr>
+<td title='com.OpenCart.test.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.OpenCart.test.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate registering an account by providing invalid email address into email field", "To check the register user functionality"</td>
+<td></td>
+<td>83</td>
+<td>com.OpenCart.test.TestRunner1@5631962</td></tr>
+<tr>
+<td title='com.OpenCart.test.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.OpenCart.test.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate registering an account by providing invalid email address into email field", "To check the register user functionality"</td>
+<td></td>
+<td>87</td>
+<td>com.OpenCart.test.TestRunner1@5631962</td></tr>
+<tr>
+<td title='com.OpenCart.test.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.OpenCart.test.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate registering the account without selecting the privacy policy checkbox option", "To check the register user functionality"</td>
+<td></td>
+<td>108</td>
+<td>com.OpenCart.test.TestRunner1@5631962</td></tr>
+<tr>
+<td title='com.OpenCart.test.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.OpenCart.test.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate registering an account by providing all the fields", "To check the register user functionality"</td>
+<td></td>
+<td>131</td>
+<td>com.OpenCart.test.TestRunner1@5631962</td></tr>
+<tr>
+<td title='com.OpenCart.test.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.OpenCart.test.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate registering an account by providing only the mandatory fields", "To check the register user functionality"</td>
+<td></td>
+<td>131</td>
+<td>com.OpenCart.test.TestRunner1@5631962</td></tr>
+<tr>
+<td title='com.OpenCart.test.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.OpenCart.test.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate registering an account by providing the existing account details", "To check the register user functionality"</td>
+<td></td>
+<td>103</td>
+<td>com.OpenCart.test.TestRunner1@5631962</td></tr>
+<tr>
+<td title='com.OpenCart.test.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.OpenCart.test.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the Breadcrumb, Page Heading, Page URL, Page Title of Registered Account", "To check the register user functionality"</td>
+<td></td>
+<td>95</td>
+<td>com.OpenCart.test.TestRunner1@5631962</td></tr>
+<tr>
+<td title='com.OpenCart.test.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.OpenCart.test.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate searching with an existing product", "To check the search functionality"</td>
+<td></td>
+<td>202</td>
+<td>com.OpenCart.test.TestRunner1@5631962</td></tr>
+<tr>
+<td title='com.OpenCart.test.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.OpenCart.test.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate user is able to sort the products list in the search results", "To check the search functionality"</td>
+<td></td>
+<td>223</td>
+<td>com.OpenCart.test.TestRunner1@5631962</td></tr>
+<tr>
+<td title='com.OpenCart.test.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.OpenCart.test.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate search by selecting the category of product", "To check the search functionality"</td>
+<td></td>
+<td>238</td>
+<td>com.OpenCart.test.TestRunner1@5631962</td></tr>
+<tr>
+<td title='com.OpenCart.test.TestRunner1.runScenario()'><b>runScenario</b><br>Test class: com.OpenCart.test.TestRunner1<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate search using the text from product description", "To check the search functionality"</td>
+<td></td>
+<td>3166</td>
+<td>com.OpenCart.test.TestRunner1@5631962</td></tr>
+</table><p>
+</body>
+</html>
